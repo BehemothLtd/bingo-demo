@@ -188,6 +188,10 @@ body {
   margin: 0;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .stage {
   height: 300px;
   width: 500px;
@@ -212,8 +216,8 @@ body {
 }
 
 .layer:after {
-  font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
-  content: 'Bingo!';
+  font: 150px/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+  content: "Bingo!";
   white-space: pre;
   text-align: center;
   height: 100%;
@@ -305,16 +309,16 @@ body {
   transform: translateZ(-28.5px);
 }
 
-.layer:nth-child(n+10):after {
+.layer:nth-child(n + 10):after {
   -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
 }
 
-.layer:nth-child(n+11):after {
+.layer:nth-child(n + 11):after {
   -webkit-text-stroke: 15px rgb(223, 149, 12);
   text-shadow: 6px 0 6px #b44125, 5px 5px 5px #ee0a0a, 0 6px 6px #ee0a0a;
 }
 
-.layer:nth-child(n+12):after {
+.layer:nth-child(n + 12):after {
   -webkit-text-stroke: 15px #ee0a0a;
 }
 
@@ -330,5 +334,77 @@ body {
 @keyframes ಠ_ಠ {
   100% {
     transform: rotateY(-40deg) rotateX(-43deg);
+  }
+}
+
+.bingo-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.bingo-img {
+  animation: rubberBand 1.58s infinite;
+  position: relative;
+  margin-top: -200px;
+}
+
+.bingo-pulse {
+  width: 100px;
+  height: 100px;
+  background: #00ffff00;
+  animation: pulse 1s infinite;
+  border-radius: 50%;
+  margin-top: -200px;
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -15deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -15deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 1000px rgba(204, 169, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
