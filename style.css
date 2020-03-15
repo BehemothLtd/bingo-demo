@@ -411,8 +411,14 @@ body {
 }
 
 .fixed-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+
+.fixed-button button {
+  position: relative;
+  background: white;
+  border: none;
   z-index: 1000;
 }
