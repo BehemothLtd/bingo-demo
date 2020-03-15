@@ -109,6 +109,80 @@
       </div>
     </div>
   </div>
+
+  <div class="bingo" id="bingo01">
+    <div class="stage">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+
+      <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bingo fixed" id="bingo02">
+    <div class="bingo-bg">
+      <img src="bingo.png" class="bingo-img">
+      <div class="bingo-pulse"></div>
+    </div>
+    <div class="stage">
+
+      <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-button">
+    <button onclick="showBingo1()">Bingo 1</button>
+    <button onclick="showBingo2()">Bingo 2</button>
+    <button onclick="hide()">Hide</button>
+  </div>
+
+  <script>
+    document.querySelectorAll(".flip-card").forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        const element = e.target.closest(".flip-card")
+        element.classList.add("active")
+      })
+    })
+
+    function showBingo1() {
+      document.getElementById("bingo01").style.display = "block";
+      document.getElementById("bingo02").style.display = "none";
+    }
+
+    function showBingo2() {
+      document.getElementById("bingo01").style.display = "none";
+      document.getElementById("bingo02").style.display = "block";
+    }
+
+    function hide() {
+      document.getElementById("bingo01").style.display = "none";
+      document.getElementById("bingo02").style.display = "none";
+    }
+  </script>
 </body>
 
 </html>

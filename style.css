@@ -51,7 +51,7 @@ body {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -186,6 +186,7 @@ body {
   min-height: 450px;
   height: 100vh;
   margin: 0;
+  display: none;
 }
 
 .fixed {
@@ -407,4 +408,11 @@ body {
   100% {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
+}
+
+.fixed-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
