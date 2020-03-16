@@ -154,14 +154,34 @@ html {
 }
 
 .active .bingo-item-inner::before {
-  content: "";
+  /* content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 10px;
+  left: 50%; */
+  /* width: 10px;
   height: 10px;
   border-radius: 50%;
-  animation: 0.5s bang ease-out backwards, 0.5s gravity ease-in backwards, 2s position linear backwards;
+  animation: 0.5s bang ease-out backwards, 0.5s gravity ease-in backwards, 2s position linear backwards; */
+  content: "";
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("stars.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3360px 0;
+  }
 }
 
 .active .bingo-item-inner::after {
@@ -173,7 +193,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: shining 0.75s reverse;
+  animation: shining 0.5s reverse;
   opacity: 0;
   transform: scale(1.1);
 }
@@ -191,7 +211,7 @@ html {
     opacity: 1;
     transform: scale(1);
     box-shadow: 0 0 5px 0px #b62195, inset 0 0 1px 0px #1d0c1f, inset 0px 0px 12px 2px #a74d4dc7,
-      inset 0 0 40px 22px #ffd200;
+      inset 0 0 40px 30px #ffd200;
   }
 }
 
