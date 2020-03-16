@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bingo!</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="board">
+      <div class="board-header">
+        <img class="board-logo" src="bingo.png">
+        <div class="board-notif">
+          <div class="board-notif-title">Mission</div>
+          <div class="board-notif-body">
+            <div class="board-notif-number">25</div>
+            <div class="board-notif-content">You've done something</div>
+          </div>
+        </div>
+        <div class="board-notif-badge"></div>
+      </div>
+      <div class="board-game">
+        <div class="bingo-list">
+          <div class="bingo-item">
+            <div class="bingo-item-inner">1</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">2</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">3</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">4</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">5</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">6</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">7</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">8</div>
+          </div>
+          <div class="bingo-item">
+            <div class="bingo-item-inner">9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".bingo-item").forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        const element = e.target.closest(".bingo-item")
+        if (element.classList.contains("active")) return
+        element.classList.add("active")
+        addNotif(element)
+      })
+    })
+
+    function addNotif() {
+      const parent = document.querySelector(".board-header");
+      const notif = document.querySelector(".board-notif");
+      const badge = document.querySelector(".board-notif-badge");
+      const notif2 = notif.cloneNode(true);
+      const badge2 = badge.cloneNode(true);
+      notif2.style.display = "flex";
+      badge2.style.display = "flex";
+      parent.removeChild(notif);
+      parent.removeChild(badge);
+      parent.appendChild(notif2);
+      parent.appendChild(badge2);
+    }
+  </script>
+</body>
+
+</html>
