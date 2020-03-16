@@ -139,13 +139,14 @@ html {
   background: white url("noise.png");
   border-radius: 25px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 30px;
   color: #9b2a3f;
   box-shadow: 0 0 5px 0px #b62195, inset 0 0 1px 0px #1d0c1f, inset 0px -10px 12px 2px #a74d4dc7,
     inset 0 0 40px 22px #b6213a, 0 0 4px 2px #1d0c1f;
 }
 
 .active .bingo-item-inner {
+  font-size: 40px;
   color: white;
   text-shadow: 0 0 6px #b62195, 0 0 12px #e450c3;
   box-shadow: 0 0 7px 0px #b62195, inset 0 0 3px 0px #b62195, inset 0 0 4px 0px white, inset 0 0 3px 4px white,
@@ -174,7 +175,7 @@ html {
   bottom: 0;
   animation: shining 0.75s reverse;
   opacity: 0;
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 @keyframes bang {
@@ -187,7 +188,7 @@ html {
 
 @keyframes shining {
   to {
-    opacity: 0.75;
+    opacity: 1;
     transform: scale(1);
     box-shadow: 0 0 5px 0px #b62195, inset 0 0 1px 0px #1d0c1f, inset 0px 0px 12px 2px #a74d4dc7,
       inset 0 0 40px 22px #ffd200;
