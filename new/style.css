@@ -193,7 +193,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: shining 0.5s reverse;
+  animation: shining 0.25s reverse;
   opacity: 0;
   transform: scale(1.1);
 }
