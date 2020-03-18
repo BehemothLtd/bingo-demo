@@ -24,31 +24,31 @@
       </div>
       <div class="board-game">
         <div class="bingo-list">
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="1">
             <div class="bingo-item-inner">1</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="2">
             <div class="bingo-item-inner">2</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="3">
             <div class="bingo-item-inner">3</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="4">
             <div class="bingo-item-inner">4</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="5">
             <div class="bingo-item-inner">5</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="6">
             <div class="bingo-item-inner">6</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="7">
             <div class="bingo-item-inner">7</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="8">
             <div class="bingo-item-inner">8</div>
           </div>
-          <div class="bingo-item">
+          <div class="bingo-item" data-number="9">
             <div class="bingo-item-inner">9</div>
           </div>
         </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="bingo-footer">
           <div class="bingo-description">Lorem ipsum dolor sit amet, consectetur adipis</div>
-          <div class="bingo-button">OK</div>
+          <div class="bingo-button" onclick="hideBingo()">OK</div>
         </div>
         <ul class="bingo-starburst">
           <li></li>
@@ -160,18 +160,33 @@
   </div>
 
   <script>
-    setTimeout(function () {
-      document.querySelector(".svg").classList.add("active")
-    }, 750)
+    let matrix = [
+      [false, false, false],
+      [false, false, false],
+      [false, false, false]
+    ]
+
+    let array = [false, false, false, false, false, false, false, false, false]
 
     document.querySelectorAll(".bingo-item").forEach(function (item) {
-      item.addEventListener("click", function (e) {
-        const element = e.target.closest(".bingo-item")
-        if (element.classList.contains("active")) return
-        element.classList.add("active")
-        addNotif(element)
-      })
+      item.addEventListener("click", open)
     })
+
+    function open(event) {
+      const element = event.target.closest(".bingo-item")
+      if (element.classList.contains("active")) return
+      element.classList.add("active")
+      const number = element.dataset.number
+      array[number - 1] = true;
+      addNotif(element)
+      checkBingo()
+    }
+
+    function checkBingo() {
+      if (array[0] && array[1] && array[2]) {
+        return showBingo()
+      }
+    }
 
     function addNotif() {
       const parent = document.querySelector(".board-header");
@@ -185,6 +200,22 @@
       parent.removeChild(badge);
       parent.appendChild(notif2);
       parent.appendChild(badge2);
+    }
+
+    function showBingo() {
+      setTimeout(function () {
+        document.querySelector(".bingo").style.display = "block";
+        document.querySelector(".bingo-bg").style.display = "block";
+
+        setTimeout(function () {
+          document.querySelector(".svg").classList.add("active")
+        }, 750)
+      }, 1000)
+    }
+
+    function hideBingo() {
+      document.querySelector(".bingo").style.display = "none";
+      document.querySelector(".bingo-bg").style.display = "none";
     }
   </script>
 </body>

@@ -358,6 +358,7 @@ html {
   right: 0;
   bottom: 0;
   z-index: 40;
+  display: none;
 }
 
 .bingo-icon {
@@ -375,6 +376,7 @@ html {
 }
 
 .bingo-bg {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
