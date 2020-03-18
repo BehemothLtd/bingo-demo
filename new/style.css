@@ -187,13 +187,46 @@ html {
   animation: shining 0.4s reverse;
   opacity: 0;
   transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
 }
 
-@keyframes bang {
+.prevent::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+}
+
+.prevent .board {
+  animation: boardBorder 0.5s infinite;
+}
+
+.chained .bingo-item-inner::after {
+  animation: chained 0.5s reverse;
+  z-index: 30;
+}
+
+@keyframes boardBorder {
   to {
-    box-shadow: 113px 56px #ffd200, 83px -87px #ffd200, 114px -155px #ffd200, 213px -44px #ffd200, -138px 23px #ffd200,
-      -59px 61px #ffd200, -191px -39px #ffd200, 103px -142px #ffd200, 242px -138px #ffd200, -165px -261px #ffd200,
-      50px -243px #ffd200, 82px 83px #ffd200, 40px -77px #ffd200, 181px 34px #ffd200, -107px -22px #ffd200;
+    box-shadow: 0 0 1px 1px #221b32, 0 0 1px 3px #8a2d76, 0 0 0px 6px #9e5f90, 0 0 6px 8px #b62195,
+      inset 0 0 15px 4px #271f4a, inset 0 0 4px 2px #1d0c1f, inset 0 0 20px 0px #1d0c1f;
+  }
+}
+
+@keyframes chained {
+  50% {
+    opacity: 0.75;
+    transform: scale(1.25);
+    box-shadow: inset 0 0 40px 30px #fceca6, 0 0 20px 15px #fceca6;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: inset 0 0 40px 30px #fceca6;
   }
 }
 

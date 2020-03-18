@@ -160,10 +160,12 @@
   </div>
 
   <script>
-    let matrix = [
-      [false, false, false],
-      [false, false, false],
-      [false, false, false]
+    let chains = [
+      "123456789",
+      "258456",
+      "78963", "74123", "14789", "12369",
+      "369", "258", "147",
+      "789", "456", "123"
     ]
 
     let array = [false, false, false, false, false, false, false, false, false]
@@ -179,12 +181,28 @@
       const number = element.dataset.number
       array[number - 1] = true;
       addNotif(element)
-      checkBingo()
+      checkBingo(number)
     }
 
-    function checkBingo() {
-      if (array[0] && array[1] && array[2]) {
-        return showBingo()
+    function checkBingo(number) {
+      for (const item of chains) {
+        if (item.indexOf(number) < 0) continue
+        const itemIndex = chains.indexOf(item)
+        const indices = item.split("")
+        let bingo = true;
+        for (const index of indices) {
+          if (!array[index - 1]) {
+            bingo = false;
+            break
+          }
+        }
+
+        if (bingo) {
+          chains.splice(itemIndex, 1)
+          showChainFX(indices)
+          showBingo(2000 + indices.length * 150)
+          break
+        }
       }
     }
 
@@ -202,7 +220,22 @@
       parent.appendChild(badge2);
     }
 
-    function showBingo() {
+    function showChainFX(indices) {
+      document.querySelector(".app").classList.add("prevent")
+      let i = 0;
+      for (const index of indices) {
+        const elementClassList = document.querySelector(`[data-number="${index}"]`).classList
+        setTimeout(function () {
+          elementClassList.add("chained")
+        }, 1000 + 150 * (i + 1))
+        setTimeout(function () {
+          elementClassList.remove("chained")
+        }, 1500 + 150 * indices.length)
+        i++;
+      }
+    }
+
+    function showBingo(delay) {
       setTimeout(function () {
         document.querySelector(".bingo").style.display = "block";
         document.querySelector(".bingo-bg").style.display = "block";
@@ -210,12 +243,13 @@
         setTimeout(function () {
           document.querySelector(".svg").classList.add("active")
         }, 750)
-      }, 1000)
+      }, delay)
     }
 
     function hideBingo() {
       document.querySelector(".bingo").style.display = "none";
       document.querySelector(".bingo-bg").style.display = "none";
+      document.querySelector(".app").classList.remove("prevent")
     }
   </script>
 </body>
