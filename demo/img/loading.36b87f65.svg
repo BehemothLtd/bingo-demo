@@ -1,0 +1,353 @@
+<svg id="ejis5m7mp7pg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.531000 228.759000" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="249.531000" height="228.759000">
+	<style>
+		<![CDATA[
+      #ejis5m7mp7pg4_to {
+        animation: ejis5m7mp7pg4_to__to 1.5s linear infinite normal forwards, opacity 1.5s linear infinite normal forwards
+      }
+
+      @keyframes opacity {
+        0% {
+          opacity: 1
+        }
+        25% {
+          opacity: 0.5
+        }
+        50% {
+          opacity: 0.25
+        }
+        75% {
+          opacity: 0.75
+        }
+        100% {
+          opacity: 1
+        }
+      }
+
+      @keyframes ejis5m7mp7pg4_to__to {
+        0% {
+          transform: translate(174.945000px, 11.567000px)
+        }
+        25% {
+          transform: translate(169.260446px, 23.754169px)
+        }
+        50% {
+          transform: translate(174.945000px, 11.567000px)
+        }
+        75% {
+          transform: translate(169.260446px, 23.754169px)
+        }
+        100% {
+          transform: translate(174.945000px, 11.567000px)
+        }
+      }
+
+      #ejis5m7mp7pg4_tr {
+        animation: ejis5m7mp7pg4_tr__tr 1.5s linear infinite normal forwards, opacity 1.5s linear infinite normal forwards
+      }
+
+      @keyframes ejis5m7mp7pg4_tr__tr {
+        0% {
+          transform: rotate(32.005383deg)
+        }
+        25% {
+          transform: rotate(22deg)
+        }
+        50% {
+          transform: rotate(32.005383deg)
+        }
+        75% {
+          transform: rotate(22deg)
+        }
+        100% {
+          transform: rotate(32.005383deg)
+        }
+      }
+
+      #ejis5m7mp7pg5_to {
+        animation: ejis5m7mp7pg5_to__to 1.5s linear infinite normal forwards, opacity 1.5s linear infinite reverse forwards
+      }
+
+      @keyframes ejis5m7mp7pg5_to__to {
+        0% {
+          transform: translate(6.826000px, 56.310000px)
+        }
+        25% {
+          transform: translate(6.826000px, 42.948582px)
+        }
+        50% {
+          transform: translate(6.826000px, 56.310000px)
+        }
+        75% {
+          transform: translate(6.826000px, 42.948582px)
+        }
+        100% {
+          transform: translate(6.826000px, 56.310000px)
+        }
+      }
+
+      #ejis5m7mp7pg5_tr {
+        animation: ejis5m7mp7pg5_tr__tr 1.5s linear infinite normal forwards, opacity 1.5s linear infinite reverse forwards
+      }
+
+      @keyframes ejis5m7mp7pg5_tr__tr {
+        0% {
+          transform: rotate(-27.974730deg)
+        }
+        25% {
+          transform: rotate(-14deg)
+        }
+        50% {
+          transform: rotate(-27.974730deg)
+        }
+        75% {
+          transform: rotate(-14deg)
+        }
+        100% {
+          transform: rotate(-27.974730deg)
+        }
+      }
+
+      #right_shadow_to {
+        animation: right_shadow_to__to 1.5s linear infinite normal forwards, opacity 1.5s linear infinite normal forwards
+      }
+
+      @keyframes right_shadow_to__to {
+        0% {
+          transform: translate(129px, 170px)
+        }
+        25% {
+          transform: translate(139.124000px, 170px)
+        }
+        50% {
+          transform: translate(129px, 170px)
+        }
+        75% {
+          transform: translate(139.124000px, 170px)
+        }
+        100% {
+          transform: translate(129px, 170px)
+        }
+      }
+
+      #left_shadow_to {
+        animation: left_shadow_to__to 1.5s linear infinite normal forwards, opacity 1.5s linear infinite normal forwards
+      }
+
+      @keyframes left_shadow_to__to {
+        0% {
+          transform: translate(77.599000px, 170px)
+        }
+        25% {
+          transform: translate(57.599000px, 170px)
+        }
+        50% {
+          transform: translate(77.599000px, 170px)
+        }
+        75% {
+          transform: translate(57.599000px, 170px)
+        }
+        100% {
+          transform: translate(77.599000px, 170px)
+        }
+      }
+
+      #middle_shadow_to {
+        animation: middle_shadow_to__to 1.5s linear infinite normal forwards, opacity 1.5s linear infinite normal forwards
+      }
+
+      @keyframes middle_shadow_to__to {
+        0% {
+          transform: translate(78px, 179px)
+        }
+        25% {
+          transform: translate(98px, 179px)
+        }
+        50% {
+          transform: translate(78px, 179px)
+        }
+        75% {
+          transform: translate(58px, 179px)
+        }
+        100% {
+          transform: translate(78px, 179px)
+        }
+      }
+
+      #ejis5m7mp7pg10_to {
+        animation: ejis5m7mp7pg10_to__to 1.5s linear infinite normal forwards
+      }
+
+      @keyframes ejis5m7mp7pg10_to__to {
+        0% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        10% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        15% {
+          transform: translate(105.620000px, 104.160000px)
+        }
+        20% {
+          transform: translate(125.620000px, 124.160000px)
+        }
+        25% {
+          transform: translate(125.620000px, 124.160000px)
+        }
+        35% {
+          transform: translate(125.620000px, 124.160000px)
+        }
+        40% {
+          transform: translate(105.620000px, 104.160000px)
+        }
+        45% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        50% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        60% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        65% {
+          transform: translate(65.620000px, 104.160000px)
+        }
+        70% {
+          transform: translate(45.620000px, 134.160000px)
+        }
+        75% {
+          transform: translate(45.620000px, 134.160000px)
+        }
+        85% {
+          transform: translate(45.620000px, 134.160000px)
+        }
+        90% {
+          transform: translate(65.620000px, 104.160000px)
+        }
+        95% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+        100% {
+          transform: translate(85.620000px, 124.160000px)
+        }
+      }
+
+      #ejis5m7mp7pg10_tr {
+        animation: ejis5m7mp7pg10_tr__tr 1.5s linear infinite normal forwards
+      }
+
+      @keyframes ejis5m7mp7pg10_tr__tr {
+        0% {
+          transform: rotate(0deg)
+        }
+        15% {
+          transform: rotate(0deg)
+        }
+        20% {
+          transform: rotate(12deg)
+        }
+        40% {
+          transform: rotate(12deg)
+        }
+        45% {
+          transform: rotate(0deg)
+        }
+        65% {
+          transform: rotate(0deg)
+        }
+        70% {
+          transform: rotate(-17deg)
+        }
+        90% {
+          transform: rotate(-17deg)
+        }
+        95% {
+          transform: rotate(0deg)
+        }
+        100% {
+          transform: rotate(0deg)
+        }
+      }
+
+      #ejis5m7mp7pg3 {
+        animation: background_colours 1.5s linear infinite normal forwards
+      }
+
+      @keyframes background_colours {
+        0% {
+          fill: url(#ejis5m7mp7pg3-fill)
+        }
+        25% {
+          fill: url(#radg2-fill)
+        }
+        50% {
+          fill: url(#radg3-fill)
+        }
+        75% {
+          fill: url(#radg2-fill)
+        }
+        100% {
+          fill: url(#ejis5m7mp7pg3-fill)
+        }
+      }
+    ]]>
+	</style>
+	<defs>
+		<radialGradient id="ejis5m7mp7pg3-fill" cx="0.500000" cy="0.500000" r="0.500000" spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop id="ejis5m7mp7pg3-fill-0" offset="0%" stop-color="rgb(15,63,31)" />
+			<stop id="ejis5m7mp7pg3-fill-1" offset="69%" stop-color="rgba(15,63,31,0.451)" />
+			<stop id="ejis5m7mp7pg3-fill-2" offset="100%" stop-color="rgba(94,126,105,0)" />
+		</radialGradient>
+		<radialGradient id="radg2-fill" cx="0.500000" cy="0.500000" r="0.500000" spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop id="radg2-fill-0" offset="0%" stop-color="#3f0f0f" />
+			<stop id="radg2-fill-1" offset="69%" stop-color="rgba(63,15,15,0.451)" />
+			<stop id="radg2-fill-2" offset="100%" stop-color="rgba(126,94,94,0)" />
+		</radialGradient>
+		<radialGradient id="radg3-fill" cx="0.500000" cy="0.500000" r="0.500000" spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop id="radg3-fill-0" offset="0%" stop-color="rgba(84,190,176,0)" />
+			<stop id="radg3-fill-1" offset="69%" stop-color="rgba(84,192,177,0.451)" />
+			<stop id="radg3-fill-2" offset="100%" stop-color="rgba(42,95,88,0)" />
+		</radialGradient>
+		<linearGradient id="ejis5m7mp7pg4-fill" x1="0.500000" y1="0" x2="0.500000" y2="1" spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop id="ejis5m7mp7pg4-fill-0" offset="0%" stop-color="rgba(84,190,176,0)" />
+			<stop id="ejis5m7mp7pg4-fill-1" offset="49.400000%" stop-color="rgb(84,192,177)" />
+			<stop id="ejis5m7mp7pg4-fill-2" offset="100%" stop-color="rgba(42,95,88,0)" />
+		</linearGradient>
+		<linearGradient id="ejis5m7mp7pg5-fill" x1="0.500000" y1="0" x2="0.500000" y2="1" spreadMethod="pad" gradientUnits="objectBoundingBox">
+			<stop id="ejis5m7mp7pg5-fill-0" offset="0%" stop-color="rgba(23,110,136,0)" />
+			<stop id="ejis5m7mp7pg5-fill-1" offset="49.400000%" stop-color="rgb(23,110,136)" />
+			<stop id="ejis5m7mp7pg5-fill-2" offset="100%" stop-color="rgba(23,110,136,0)" />
+		</linearGradient>
+	</defs>
+	<g id="ejis5m7mp7pg2" transform="matrix(1 0 0 1 -6.82600000000000 -11.24100000000000)">
+		<circle id="ejis5m7mp7pg3" r="100.500000" transform="matrix(1 0 0 1 128.50000000000000 127.50000000000000)" fill="url(#ejis5m7mp7pg3-fill)" stroke="none" stroke-width="1" />
+		<g id="ejis5m7mp7pg4_to" transform="translate(174.945000,11.567000)">
+			<g id="ejis5m7mp7pg4_tr" transform="rotate(32.005383)">
+				<path id="ejis5m7mp7pg4" d="M48,0L96,151.727792L0,151.727792Z" transform="skewX(-0) skewY(0) scale(1.000002,1.000002) translate(0,0)" fill="url(#ejis5m7mp7pg4-fill)" stroke="none" stroke-width="1" />
+			</g>
+		</g>
+		<g id="ejis5m7mp7pg5_to" transform="translate(6.826000,56.310000)">
+			<g id="ejis5m7mp7pg5_tr" transform="rotate(-27.974730)">
+				<path id="ejis5m7mp7pg5" d="M48,0L96,151.022366L0,151.022366Z" transform="skewX(0) skewY(0) scale(0.999825,0.999825) translate(0,0)" fill="url(#ejis5m7mp7pg5-fill)" stroke="none" stroke-width="1" />
+			</g>
+		</g>
+		<g id="right_shadow_to" transform="translate(129,170)">
+			<ellipse id="right_shadow" rx="37.500000" ry="10.500000" transform="translate(37.500000,10.500000)" fill="rgb(111,17,117)" stroke="none" stroke-width="1" />
+		</g>
+		<g id="left_shadow_to" transform="translate(77.599000,170)">
+			<ellipse id="left_shadow" rx="30" ry="10.500000" transform="translate(30,10.500000)" fill="rgb(54,65,116)" stroke="none" stroke-width="1" />
+		</g>
+		<g id="middle_shadow_to" transform="translate(78,179)">
+			<ellipse id="middle_shadow" rx="50" ry="14" transform="translate(50,14)" fill="rgb(84,192,177)" stroke="none" stroke-width="1" />
+		</g>
+		<g id="ejis5m7mp7pg9" transform="matrix(1 0 0 1 6.83000000000000 11.24000000000000)">
+			<g id="ejis5m7mp7pg10_to" transform="translate(85.620000,124.160000)">
+				<g id="ejis5m7mp7pg10_tr" transform="rotate(0)">
+					<path id="ejis5m7mp7pg10" d="M11.871000,32.306000C11.869879,30.507563,12.074543,28.714904,12.481000,26.963000C5.570517,26.438273,0.179884,20.766115,0.007325,13.837888C-0.165235,6.909660,4.936339,0.976175,11.812131,0.108077C18.687923,-0.760021,25.104157,3.719292,26.659000,10.473000C32.454663,8.169561,38.926812,8.255856,44.659000,10.713000C46.303740,3.944083,52.828591,-0.462044,59.721825,0.541317C66.615060,1.544678,71.613088,7.628044,71.259932,14.584961C70.906776,21.541879,65.318405,27.087844,58.359000,27.388000C60.231223,36.174388,56.930372,45.259356,49.854630,50.794671C42.778888,56.329986,33.166501,57.346975,25.089106,53.414859C17.011712,49.482744,11.882844,41.289639,11.875000,32.306000Z" transform="translate(0,0)" fill="rgb(255,255,255)" stroke="none" stroke-width="1" />
+				</g>
+			</g>
+		</g>
+		<text id="ejis5m7mp7pg11" dx="0" dy="0" font-family="AdobeHeitiStd-Regular, &quot;Adobe Heiti Std&quot;" font-size="20" transform="matrix(1 0 0 1 78 240.01562500000000)" fill="rgb(255,255,255)" stroke="none" stroke-width="1">
+			<![CDATA[LOADING...]]>
+		</text>
+	</g>
+</svg>
